@@ -1,0 +1,84 @@
+/*WeUI reset*/
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body {line-height: 1.6;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
+* {margin: 0;padding: 0;}
+a img {border: 0;}
+a {text-decoration: none;}
+body,html{height:100%;-webkit-tap-highlight-color:transparent}
+body{overflow-x:hidden;}
+
+/*--------------------body--------------------*/
+.body-bg{background:#3badfc url(body-bg.png) no-repeat 0 center;background-size:100% auto;}
+.problem{height: 100%;position: relative;}
+
+/*star*/
+.problem-logo{text-align: center;font-size: 0;line-height: 0;padding-top:15px;margin-bottom: -30px;}
+.problem-logo img{width:95vw;}
+h3.t1,h3.t2{width:40vw;height:40px;border-radius: 10px;background:#9c2a2d url(star-text2.png) no-repeat center center;background-size: auto 26px;color: rgba(0,0,0,0);position: relative;z-index: 2;display: inline-block;margin-left:30px;}
+h3.t2{background-image: url(star-text3.png);margin-left:10px;}
+h3.current{background-color: #ff4b4b}
+.h3-content{margin:-10px 15px 0 15px;background-color: #ff4b4b;border:#000 solid 1px;border-radius: 10px;padding:20px;color: #fff;box-shadow: 2px 2px 2px rgba(0,0,0,.3);position: relative;z-index: 1;}
+.btn-star{width:40vw;height: 40px;line-height: 40px;text-align: center;color: #fff;background-color: #e9ce20;display: block;margin:20px auto;border-radius: 7px;box-shadow: 2px 2px 2px rgba(0,0,0,.2);position: relative;z-index: 1;}
+.problem.star .bg{background:url(star-bot.png) no-repeat center bottom;background-size: 100% auto;position: absolute;z-index: 0;left:0;right: 0;bottom:0;height: 40%;}
+/*level*/
+.problem.level1,.problem.level2,.problem.level3{background: -webkit-linear-gradient(top, rgba(59,173,252,1) 0%,rgba(59,173,252,1) 40%,rgba(59,173,252,0) 75%,rgba(59,173,252,0) 100%);background: linear-gradient(to bottom, rgba(59,173,252,1) 0%,rgba(59,173,252,1) 40%,rgba(59,173,252,0) 75%,rgba(59,173,252,0) 100%);}
+.img-gif{text-align: center;}
+.img-gif:after{content: '';display: block;position: absolute;left:0;right:0;top:0;background: url(level1-bg.png) no-repeat 0 0;background-size: 96% auto;height: 100vw;z-index: 1;}
+.problem.level2 .img-gif:after{background: url(level2-bg.png) no-repeat 0 8px;background-size:100% auto;}
+.problem.level3 .img-gif:after{background: url(level3-bg.png) no-repeat 0 7px;background-size:100% auto;}
+.img-gif img{width:81vw;height:54vw;margin-top: 31%;background-color: #000;object-fit:contain;}
+.ico-tip{width:20px;height: 28px;background: url(ico-tip.png) no-repeat center 0;background-size: auto 100%;display: inline-block;vertical-align: middle;margin-right: 3px;}
+.problem.level1 h3,.problem.level2 h3,.problem.level3 h3{color: #fff;margin:15px 0 0 20px;font-weight: normal;font-size: 1.2em;}
+.question,.select{margin:10px 30px 0 40px;color: #fff;font-size: 0.8em;}
+.select label{display: inline-block;width:41%;border:#fff solid 1px;border-radius: 5px;padding:6px;margin:0 10px 10px 0;vertical-align: top;}
+.select label.current{background-color: #fff;color: #1371b2;}
+ /*抽奖*/
+.problem.choujiang{padding-top:15px;box-sizing: border-box;}
+.problem.choujiang .bg1{position: absolute;z-index:-1;top:0;left:0;width:100%;height: 70vh;background: url(choujiang-bg1.png) no-repeat center 5vh;background-size: 100% auto;}
+.problem.choujiang .bg2{position: absolute;z-index:-1;bottom:0;left:0;width:100%;height: 30vh;background: url(choujiang-bg2.png) no-repeat center bottom;background-size: 100% auto;}
+.problem.choujiang .tip{background-color: #fff;width:50vw;height: 35px;line-height: 35px;font-size: 1.1em;text-align: center;border:#000 solid 1px;border-radius: 45px;margin:0 auto -5px auto;box-shadow: 0 -2px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.2), 2px 0 0 rgba(0,0,0,.2),-2px 0 0 rgba(0,0,0,.2);position: relative;z-index: 1;}
+.problem.choujiang .tip em{color: #ff5d5d;padding:0 5px;font-style: normal;}
+.problem.choujiang a.btn-red,.problem.choujiang a.btn-blue{display: block;margin:10px auto;width:50vw;}
+.problem.choujiang a.btn-blue{background-color: #2a85f5;}
+.problem.choujiang h3.t1,.problem.choujiang h3.t2{background-color: #2a629c;}
+.problem.choujiang h3.current{background-color:#2a85f5;}
+.problem.choujiang .h3-content{background-color: #fff;color: #333;}
+/*填信息表单*/
+.xxform{}
+.form-title{background: #3badfc url(form-text1.png) no-repeat 20px center;background-size:auto 30px;color: rgba(0,0,0,0);height: 80px;}
+.xxform form{background: #fff url(pop-bg.png) 0 0;background-size:100% auto;}
+.xxform label{display: block;padding:20px 20px 0 20vw;}
+.xxform .w20{width:20vw;margin-left:-20vw;position: absolute;text-align: right;}
+.xxform input,.xxform textarea{border:#bfbdbd solid 1px;border-radius: 5px;box-shadow:3px 3px 3px #ddd inset;background-color: #fff;padding:5px 10px;width: 100%;box-sizing: border-box;-webkit-appearance: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);font-size: inherit;color: inherit;outline:0;}
+.xxform textarea{height: 35vh;resize: none;}
+.xxform p.submit{text-align: center;}
+.xxform p.error{padding:15px 0;height: 30px;line-height: 30px;text-align: center;color: #999;}
+.xxform .sft-logo{background: #3badfc;text-align: center;line-height: 0;font-size: 0;padding:20px 0;}
+.xxform .sft-logo img{width:90%;}
+ /*弹窗*/
+ .dialog-mask {position: fixed;z-index: 1000;width: 100%;height: 100%;top: 0;left: 0;background: rgba(0, 0, 0, 0.7);}
+ .dialog{position: fixed;z-index: 5000;width: 85%;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);background: #fff url(pop-bg.png) 0 0;background-size:100% auto;text-align: center;border-radius:15px;padding-bottom: 30px;}
+.dialog .img-title{padding:15px 0 0 10px;border-radius:15px 15px 0 0;text-align: left;font-size: 0;line-height: 0;}
+.dialog.win .img-title{background:#fe4d4d url(pop-win.png) no-repeat 88% 40%;background-size: auto 60%;}
+.dialog.over .img-title{background:#424242 url(pop-over.png) no-repeat 88% 40%;background-size: auto 60%;}
+.dialog .img-title img{height: 26vw;}
+.dialog .tip{margin:1.2em 20px .5em;color: #fe4d4d;}
+.btn-red,.btn-blue{display: inline-block;border-radius:5px;height: 42px;line-height: 42px;background-color: #ff4b4b;text-align: center;color: #fff;font-size: 1.1em;width:40%;margin:10px 5px 0 5px;border:none;}
+.btn-blue{background-color: #4bacff;}
+.dialog-title{background-color:#fe4d4d;height: 70px;line-height: 70px;font-size: 1.2em;color: #fff;border-radius:15px 15px 0 0;}
+.dialog.choujiang{padding-bottom: 0;}
+.dialog.choujiang .btn-red,.dialog.choujiang .btn-blue{width:auto;padding:0 20px;}
+.dialog .sft-logo{background-color:#fe4d4d;padding:20px 0;font-size: 0;line-height: 0;margin-top:20px;border-radius:0 0 15px 15px;}
+.dialog .sft-logo img{width:90%;}
+.dialog .ico-close{position: absolute;right:-15px;top:-15px;}
+.ico-close{display: block; position:relative;width:40px;height: 40px;background-color: #fff;border-radius: 40px;}
+.ico-close:before,.ico-close:after{content: ''; height:3px; width:30px; display:block; background:#333; border-radius:10px;-webkit-border-radius:10px;position:absolute; top:17px; left:5px; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
+.ico-close:after{transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+/*动画*/
+@-webkit-keyframes anim-flyl{0%{-webkit-transform: translateX(50%); opacity: 0;}100%{-webkit-transform: translateX(0);opacity: 1;}}
+@keyframes anim-flyl{0%{transform: translateX(50%); opacity: 0;}100%{transform: translateX(0);opacity: 1;}}
+.problem{-webkit-animation:anim-flyl 200ms forwards;animation:anim-flyl 200ms forwards;}
+/*尺寸hack*/
+@media screen and (max-width:321px){body{font-size:16px}.select label{width:38%;}}
+@media screen and (min-width:321px) and (max-width:400px){body{font-size:18px}}
+@media screen and (min-width:400px){body{font-size:22px}}
